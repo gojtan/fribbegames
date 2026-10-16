@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#111411">
+    <title>Player support | FribbeGames</title>
+    <meta name="description" content="Contact FribbeGames for help with Conveyor Chaos, Delvenomics and Delvebound. Bug reports, purchases and feedback.">
+    <meta property="og:title" content="Player support | FribbeGames">
+    <meta property="og:description" content="Contact FribbeGames for help with Conveyor Chaos, Delvenomics and Delvebound. Bug reports, purchases and feedback.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/fribbegamesikon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="support.html#main">Skip to content</a>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="index.html" aria-label="FribbeGames home">
+          <img src="assets/fribbegames34.png" alt="FribbeGames" width="213" height="71">
+        </a>
+        <button class="menu" aria-expanded="false" aria-controls="navigation">Menu ☰</button>
+        <nav class="navlinks" id="navigation" aria-label="Main navigation">
+          <a href="index.html#games">Our games</a>
+          <a href="index.html#about">About</a>
+          <a href="support.html" aria-current="page">Support</a>
+          <a class="contact" href="mailto:fribbegames@outlook.com">Get in touch ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="pagehero">
+        <div class="wrap">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> / Support</div>
+          <div class="eyebrow">Player support</div>
+          <h1>Let’s get you<br>back to playing.</h1>
+          <p>A bug, a purchase question or an idea for the next update? We would like to hear from you.</p>
+        </div>
+      </div>
+      <div class="wrap support-grid">
+        <div class="support-card">
+          <h2 style="margin-top:0;font-size:28px">How can we help?</h2>
+          <p class="formnote">Fill in the details below to prepare an email.</p>
+          <form id="support-form">
+            <label for="game">Your game</label>
+            <select id="game" name="game" required>
+              <option value="" disabled selected>Select a game</option>
+              <option>Conveyor Chaos</option>
+              <option>Delvenomics</option>
+              <option>Delvebound</option>
+              <option>Other / website</option>
+            </select>
+            <label for="topic">What is it about?</label>
+            <select id="topic" name="topic">
+              <option>Bug report</option>
+              <option>Purchase help</option>
+              <option>Gameplay question</option>
+              <option>Feedback or idea</option>
+              <option>Data deletion request</option>
+              <option>Privacy request</option>
+              <option>Other</option>
+            </select>
+            <label for="device">Device &amp; Android version <span class="formnote">(optional)</span>
+            </label>
+            <input id="device" name="device" placeholder="e.g. Samsung Galaxy S24, Android 15" maxlength="180">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Tell us what happened, what you expected and how we can reproduce it." required maxlength="6000"></textarea>
+            <button class="btn" type="submit">Open email app <span aria-hidden="true">↗</span>
+            </button>
+            <p class="formnote" id="form-status" role="status" aria-live="polite">This opens your email app. Nothing is sent until you send the email there. You can attach screenshots in your email app.</p>
+          </form>
+        </div>
+        <div class="support-info">
+          <div class="eyebrow">Direct line</div>
+          <h2 style="font-size:30px">One inbox. All three games.</h2>
+          <a class="email" href="mailto:fribbegames@outlook.com">fribbegames@outlook.com ↗</a>
+          <p>FribbeGames is a small independent project. Thank you for your patience while your message is reviewed.</p>
+          <h3>Before you get in touch</h3>
+          <details class="faq">
+            <summary>What should I include in a bug report?</summary>
+            <p>The game name, game version, device model, Android version and the steps that caused the issue. Screenshots are helpful. Please avoid including sensitive personal information.</p>
+          </details>
+          <details class="faq">
+            <summary>I have a problem with a purchase.</summary>
+            <p>Check that you are using the same Google Play account as when you made the purchase. Use Restore Purchases if that option is available in your game. If you still need help, email the game name and Google Play order reference. Never send card details or passwords.</p>
+          </details>
+          <details class="faq">
+            <summary>How do I delete my game data?</summary>
+            <p>Our <a class="textlink" href="data-deletion.html">data deletion page</a> explains how to erase local progress, manage cloud saves and request removal of support correspondence.</p>
+          </details>
+          <details class="faq">
+            <summary>Where can I download the games?</summary>
+            <p>Availability depends on each game’s release and testing stage. Contact us for current availability or testing information. Store links will be added here when available.</p>
+          </details>
+          <details class="faq">
+            <summary>Can I share an idea or suggestion?</summary>
+            <p>Absolutely. Choose Feedback or idea in the form, tell us which game it is for and describe what you would love to see.</p>
+          </details>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="footer-brand" href="index.html">
+            <img src="assets/favicon.png" width="33" height="33" alt="">FribbeGames</a>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html#games">Our games</a>
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy policy</a>
+            <a href="data-deletion.html">Data deletion</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 FribbeGames. Made in Sweden.</span>
+          <span>Small studio. Big curiosity.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,37 +1,40 @@
-FRIBBEGAMES – EGEN HOSTING
+FRIBBEGAMES – HTML/CSS OCH GITHUB PAGES
 
-Det här är en komplett statisk hemsida i HTML, CSS och JavaScript.
-Inga paket, ramverk, databaser eller byggkommandon behövs.
+LOKALT
+Packa upp hela ZIP-filen. Dubbelklicka på index.html.
+Behåll assets-mappen bredvid HTML-, CSS- och JavaScript-filerna.
+Du behöver ingen server, installation eller byggprocess.
 
-PUBLICERA
-1. Packa upp ZIP-filen.
-2. Ladda upp allt innehåll till webbhotellets webbrot, ofta public_html eller www.
-3. Behåll mapparna assets, support, privacy och data-deletion.
-4. Öppna din domän i webbläsaren.
+GITHUB PAGES
+1. Skapa ett GitHub-repository.
+2. Ladda upp innehållet i den uppackade mappen till repositoryts rot.
+   index.html ska ligga direkt i roten, inte i en extra undermapp.
+3. Öppna Settings > Pages.
+4. Under Build and deployment, välj Deploy from a branch.
+5. Välj main och /(root), och spara.
+6. När publiceringen är klar, öppna adressen som GitHub visar.
 
-Sidan är förberedd för webbplatsens rot, t.ex. https://fribbegames.se/.
-Länkar som /assets/... utgår från domänens rot. Vid hosting i en undermapp
-behöver dessa länkar anpassas.
+Relativa länkar gör att sidan även fungerar under /repository-namn/.
+Filen .nojekyll gör att innehållet serveras som statiska filer.
+Vid egen domän: lägg till domänen i GitHub Pages och konfigurera DNS.
 
 FILER
 index.html – startsidan
-style.css – gemensam layout och design
+style.css – design
 app.js – mobilmeny och supportformulär
-support/index.html – support
-privacy/index.html – privacy policy
- data-deletion/index.html – radering av data
-404.html – felsida (koppla som egen 404-sida om webbhotellet stöder det)
+support.html – support
+privacy.html – privacy policy
+ data-deletion.html – radering av data
+404.html – felsida
 assets/ – bilder och favicon
 
-REDIGERA
-Öppna HTML-filerna i valfri texteditor. Ändra design i style.css.
-Supportformuläret öppnar besökarens mejlprogram via mailto:.
-Det skickar inte mejl automatiskt och kräver ingen backend.
-Alla bilder ligger lokalt; inga externa typsnitt eller skript behövs.
+Supportformuläret öppnar besökarens mejlprogram. Det skickar inget automatiskt.
+Alla HTML-sidor ligger i huvudmappen. Endast bilder ligger i assets/.
+HTML, CSS och JavaScript är formaterade med indrag och radbrytningar.
 
-INNAN OFFENTLIG LANSERING
-Lägg till de riktiga Google Play-länkarna.
-Integritetstexterna är utkast: stäm av databehandling, tjänsteleverantörer,
-ansvarig utvecklare, lagring och aktiverade SDK:er mot de släppta spelen.
-Kontrollera även webbhotellets behandling av besöksdata.
-Kontrollera layouten i webbläsare och på mobil.
+404.html använder relativa länkar som fungerar från webbplatsens rot;
+GitHub Pages felsidor på godtyckliga djupa adresser kan kräva anpassning.
+
+INNAN LANSERING
+Lägg till riktiga Google Play-länkar och stäm av integritetsutkasten mot
+spelversionerna och tjänsterna som faktiskt används.
