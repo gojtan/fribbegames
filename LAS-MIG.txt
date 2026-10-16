@@ -1,0 +1,37 @@
+FRIBBEGAMES – EGEN HOSTING
+
+Det här är en komplett statisk hemsida i HTML, CSS och JavaScript.
+Inga paket, ramverk, databaser eller byggkommandon behövs.
+
+PUBLICERA
+1. Packa upp ZIP-filen.
+2. Ladda upp allt innehåll till webbhotellets webbrot, ofta public_html eller www.
+3. Behåll mapparna assets, support, privacy och data-deletion.
+4. Öppna din domän i webbläsaren.
+
+Sidan är förberedd för webbplatsens rot, t.ex. https://fribbegames.se/.
+Länkar som /assets/... utgår från domänens rot. Vid hosting i en undermapp
+behöver dessa länkar anpassas.
+
+FILER
+index.html – startsidan
+style.css – gemensam layout och design
+app.js – mobilmeny och supportformulär
+support/index.html – support
+privacy/index.html – privacy policy
+ data-deletion/index.html – radering av data
+404.html – felsida (koppla som egen 404-sida om webbhotellet stöder det)
+assets/ – bilder och favicon
+
+REDIGERA
+Öppna HTML-filerna i valfri texteditor. Ändra design i style.css.
+Supportformuläret öppnar besökarens mejlprogram via mailto:.
+Det skickar inte mejl automatiskt och kräver ingen backend.
+Alla bilder ligger lokalt; inga externa typsnitt eller skript behövs.
+
+INNAN OFFENTLIG LANSERING
+Lägg till de riktiga Google Play-länkarna.
+Integritetstexterna är utkast: stäm av databehandling, tjänsteleverantörer,
+ansvarig utvecklare, lagring och aktiverade SDK:er mot de släppta spelen.
+Kontrollera även webbhotellets behandling av besöksdata.
+Kontrollera layouten i webbläsare och på mobil.
