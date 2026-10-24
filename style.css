@@ -308,33 +308,34 @@ h3 {
   transform:scale(1.04)
 }
 
-.game-art.screenshot {
-  background:radial-gradient(ellipse at center,#2b5260,#121f2a)
-}
-
 .game-art.runerazzle {
   background:#201d2d
 }
 
+.game-art.screenshot {
+  background:radial-gradient(ellipse at center,#2b4551,#151e28)
+}
+
+.game-art.screenshot.delvenomics,
+.game-art.screenshot.delvebound {
+  background:radial-gradient(ellipse at center,#39304e,#191a25)
+}
+
 .game-art.screenshot img {
-  width:190px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:64%;
+  max-width:320px;
   height:auto;
-  object-fit:cover;
-  object-position:top;
-  margin:25px auto;
-  max-width:64%;
-  transform:rotate(-9deg);
-  box-shadow:0 0 40px #0008;
-  border:1px solid #577184;
-  border-radius:8px
+  transform:translate(-50%,-50%) rotate(-6deg);
+  border:1px solid #ffffff26;
+  border-radius:8px;
+  box-shadow:0 12px 30px #0006
 }
 
 .game:hover .game-art.screenshot img {
-  transform:rotate(-6deg) translateY(-5px)
-}
-
-.game-art.delvebound img {
-  object-position:center 35%
+  transform:translate(-50%,-50%) rotate(-6deg) translateY(-4px)
 }
 
 .number {
@@ -807,9 +808,6 @@ form .btn {
   .game-art {
     height:235px
   }
-  .game-art.delvenomics img {
-    object-fit:cover
-  }
   .game-body {
     padding:25px
   }
@@ -896,17 +894,4 @@ form .btn {
   * {
     transition:none!important
   }
-}
-
-/* Real gameplay screenshots; click to see the complete portrait image. */
-.game-art.screenshot.delvenomics {
-  background: radial-gradient(ellipse at center, #35304c, #161923);
-}
-
-.game-art.screenshot.delvebound {
-  background: radial-gradient(ellipse at center, #34304e, #191a25);
-}
-
-.game-art.screenshot a {
-  display: block;
 }
