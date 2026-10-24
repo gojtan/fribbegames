@@ -277,7 +277,7 @@ h3 {
 
 .games {
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(2,minmax(0,1fr));
   gap:24px
 }
 
@@ -310,6 +310,10 @@ h3 {
 
 .game-art.screenshot {
   background:radial-gradient(ellipse at center,#2b5260,#121f2a)
+}
+
+.game-art.runerazzle {
+  background:#eee7f6
 }
 
 .game-art.screenshot img {
