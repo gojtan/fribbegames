@@ -1,52 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
   <defs>
     <linearGradient id="bg" x2="1" y2="1">
-      <stop stop-color="#faf7f4"/>
-      <stop offset="1" stop-color="#e6dcf5"/>
+      <stop stop-color="#30283f"/>
+      <stop offset="1" stop-color="#151822"/>
     </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dy="8" stdDeviation="8" flood-color="#63517f" flood-opacity=".18"/>
+      <feDropShadow dy="8" stdDeviation="8" flood-color="#000000" flood-opacity=".4"/>
     </filter>
     <g id="purple">
-      <rect width="72" height="72" rx="16" fill="#f0eaf8"/>
+      <rect width="72" height="72" rx="16" fill="#3b304e"/>
       <path d="M36 6 66 36 36 66 6 36Z" fill="#ad8be3" stroke="#7855ae" stroke-width="4"/>
       <path d="m23 44 13-23 13 23" fill="none" stroke="#63418f" stroke-width="4"/>
       <path d="m16 32 20-20" stroke="#d9c3fa" stroke-width="3"/>
     </g>
     <g id="rose">
-      <rect width="72" height="72" rx="16" fill="#f7edf4"/>
+      <rect width="72" height="72" rx="16" fill="#423044"/>
       <path d="m36 6 25 15v30L36 66 11 51V21Z" fill="#f081a8" stroke="#d35b8a" stroke-width="4"/>
       <path d="M36 23v26M24 36h24" stroke="#a93361" stroke-width="4"/>
       <path d="m19 24 17-10 17 10" fill="none" stroke="#ffbfd5" stroke-width="3"/>
     </g>
     <g id="blue">
-      <rect width="72" height="72" rx="16" fill="#eeedf9"/>
+      <rect width="72" height="72" rx="16" fill="#30394e"/>
       <path d="M36 6 66 36 36 66 6 36Z" fill="#83c4ee" stroke="#5395c2" stroke-width="4"/>
       <path d="m26 24 22 12-22 12" fill="none" stroke="#286590" stroke-width="4"/>
       <path d="m16 32 20-20" stroke="#c7eaff" stroke-width="3"/>
     </g>
     <g id="gold">
-      <rect width="72" height="72" rx="16" fill="#f6eff6"/>
+      <rect width="72" height="72" rx="16" fill="#41394a"/>
       <path d="m24 8 24 0 16 16 0 24-16 16H24L8 48V24Z" fill="#f4c762" stroke="#d5a13a" stroke-width="4"/>
       <circle cx="36" cy="36" r="12" fill="none" stroke="#a57425" stroke-width="3"/>
       <circle cx="36" cy="36" r="4" fill="#a57425"/>
     </g>
     <g id="teal">
-      <rect width="72" height="72" rx="16" fill="#eeedf6"/>
+      <rect width="72" height="72" rx="16" fill="#2d4147"/>
       <path d="m24 8 24 0 16 16 0 24-16 16H24L8 48V24Z" fill="#63c9bc" stroke="#31a497" stroke-width="4"/>
       <path d="M25 29a14 14 0 1 1 5 19" fill="none" stroke="#227e78" stroke-width="4"/>
     </g>
     <g id="green">
-      <rect width="72" height="72" rx="16" fill="#f1edf6"/>
+      <rect width="72" height="72" rx="16" fill="#324239"/>
       <path d="m36 6 25 15v30L36 66 11 51V21Z" fill="#8ec991" stroke="#63a66a" stroke-width="4"/>
       <path d="m26 26 20 20m0-20L26 46" stroke="#387744" stroke-width="4"/>
     </g>
   </defs>
   <path fill="url(#bg)" d="M0 0h720v480H0z"/>
-  <circle cx="690" cy="45" r="195" fill="#f8ddd6" opacity=".65"/>
-  <circle cx="25" cy="460" r="170" fill="#ded1f2" opacity=".6"/>
+  <circle cx="690" cy="45" r="195" fill="#69496c" opacity=".65"/>
+  <circle cx="25" cy="460" r="170" fill="#49366b" opacity=".6"/>
   <g transform="translate(168 39) rotate(-6 192 200)" filter="url(#shadow)">
-    <rect x="-14" y="-14" width="412" height="412" rx="30" fill="#fff"/>
+    <rect x="-14" y="-14" width="412" height="412" rx="30" fill="#242330" stroke="#51455f" stroke-width="2"/>
     <use href="#purple"/><use href="#rose" x="78"/><use href="#blue" x="156"/><use href="#gold" x="234"/><use href="#teal" x="312"/>
     <use href="#blue" y="78"/><use href="#green" x="78" y="78"/><use href="#teal" x="156" y="78"/><use href="#rose" x="234" y="78"/><use href="#purple" x="312" y="78"/>
     <use href="#rose" y="156"/><use href="#teal" x="78" y="156"/><use href="#purple" x="156" y="156"/><use href="#gold" x="234" y="156"/><use href="#blue" x="312" y="156"/>
