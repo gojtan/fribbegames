@@ -347,6 +347,14 @@ h3 {
   top:85%
 }
 
+.game-art.screenshot.moonbakery {
+  background:radial-gradient(ellipse at center,#5a3a8a,#1a1233)
+}
+
+.game-art.screenshot.moonbakery img {
+  top:80%
+}
+
 .game:hover .game-art.screenshot img {
   transform:translate(-50%,-50%) rotate(-6deg) translateY(-4px)
 }
