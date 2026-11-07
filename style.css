@@ -355,6 +355,22 @@ h3 {
   top:80%
 }
 
+.game-art.screenshot.lumengrove {
+  background:radial-gradient(ellipse at center,#1f5a4c,#0d1a1f)
+}
+
+.game-art.screenshot.lumengrove img {
+  top:80%
+}
+
+.game-art.screenshot.orbitstation {
+  background:radial-gradient(ellipse at center,#3b3a8f,#141433)
+}
+
+.game-art.screenshot.orbitstation img {
+  top:75%
+}
+
 .game:hover .game-art.screenshot img {
   transform:translate(-50%,-50%) rotate(-6deg) translateY(-4px)
 }
