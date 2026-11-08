@@ -40,3 +40,35 @@ if (form) {
       'Your request is sent only when you press Send in your email app.';
   });
 }
+
+// Beta applications use the same email handoff as player support.
+const betaForm = document.querySelector('#beta-form');
+
+if (betaForm) {
+  betaForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const data = new FormData(betaForm);
+    const subject = 'Beta tester application';
+    const body = [
+      `Name: ${data.get('name') || '(not provided)'}`,
+      `Google Play email: ${data.get('email')}`,
+      'Testing interest: Upcoming FribbeGames titles',
+      `Device / Android version: ${data.get('device')}`,
+      '',
+      data.get('message') || '',
+      '',
+    ].join('\n');
+
+    window.location.href =
+      'mailto:fribbegames@outlook.com?subject=' +
+      encodeURIComponent(subject) +
+      '&body=' +
+      encodeURIComponent(body);
+
+    document.querySelector('#beta-status').textContent =
+      'Your email app should open with your application. Send the email there to apply. ' +
+      'If it does not open, email fribbegames@outlook.com with your details. ' +
+      'Your application has not been submitted by this website.';
+  });
+}
