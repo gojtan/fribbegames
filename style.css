@@ -371,6 +371,15 @@ h3 {
   top:75%
 }
 
+.game-art.screenshot.sugarswarm {
+  background:radial-gradient(ellipse at center,#a8dbc3,#31564b)
+}
+
+.game-art.screenshot.sugarswarm img {
+  width:90%;
+  max-width:none
+}
+
 .game:hover .game-art.screenshot img {
   transform:translate(-50%,-50%) rotate(-6deg) translateY(-4px)
 }
