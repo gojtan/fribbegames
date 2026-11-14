@@ -641,6 +641,11 @@ footer {
   text-underline-offset:4px
 }
 
+.prose a.btn {
+  color:#1c2019;
+  text-decoration:none
+}
+
 .notice {
   padding:22px 25px;
   border-left:3px solid var(--accent);
