@@ -127,3 +127,9 @@ if (filters) {
   filters.hidden = false;
   apply();
 }
+
+// Keep the hero game counts in sync with the game list.
+document.querySelectorAll('[data-stat]').forEach((stat) => {
+  const count = document.querySelectorAll(`.game[data-status="${stat.dataset.stat}"]`).length;
+  if (count) stat.textContent = count;
+});
