@@ -290,6 +290,106 @@ h3 {
   flex-direction:column
 }
 
+.game-filters {
+  display:grid;
+  gap:12px;
+  margin:-8px 0 28px
+}
+
+.filter-row {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px
+}
+
+.filter-label {
+  font:10px monospace;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  color:var(--green);
+  min-width:56px
+}
+
+.chip {
+  font:inherit;
+  font-size:13px;
+  font-weight:600;
+  color:var(--text);
+  background:transparent;
+  border:1px solid var(--line);
+  border-radius:999px;
+  min-height:40px;
+  padding:8px 16px;
+  cursor:pointer;
+  transition:background .15s,border-color .15s,color .15s
+}
+
+.chip:after {
+  content:attr(data-count);
+  margin-left:8px;
+  font:11px monospace;
+  color:var(--muted)
+}
+
+.chip:hover {
+  border-color:var(--accent)
+}
+
+.chip[aria-pressed="true"] {
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#1c2019
+}
+
+.chip[aria-pressed="true"]:after {
+  color:#1c2019b3
+}
+
+.chip.is-empty:not([aria-pressed="true"]) {
+  opacity:.45
+}
+
+.filter-status {
+  margin:4px 0 0;
+  font:11px monospace;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--muted)
+}
+
+.games-empty {
+  grid-column:1/-1;
+  color:var(--muted);
+  border:1px dashed var(--line);
+  border-radius:8px;
+  padding:40px 24px;
+  text-align:center;
+  margin:0
+}
+
+.games-empty .textlink {
+  background:none;
+  border:0;
+  border-bottom:1px solid #76806b;
+  color:var(--text);
+  font:inherit;
+  cursor:pointer;
+  margin-left:6px
+}
+
+.game[hidden],
+.games-empty[hidden],
+.game-filters[hidden] {
+  display:none
+}
+
+@media(max-width:700px) {
+  .filter-label {
+    width:100%
+  }
+}
+
 .game-art {
   height:240px;
   position:relative;
@@ -378,6 +478,43 @@ h3 {
 .game-art.screenshot.sugarswarm img {
   width:90%;
   max-width:none
+}
+
+.game-art.screenshot.purrhaven {
+  background:radial-gradient(ellipse at center,#a7b98f,#3e4a33)
+}
+
+.game-art.screenshot.purrhaven img {
+  top:80%
+}
+
+.game-art.screenshot.boltglide img {
+  width:90%;
+  max-width:none
+}
+
+.game-art.screenshot.cinderquay {
+  background:radial-gradient(ellipse at center,#2f6d8c,#13283a)
+}
+
+.game-art.screenshot.cinderquay img {
+  top:70%
+}
+
+.game-art.screenshot.boltglide {
+  background:radial-gradient(ellipse at center,#5b2d7a,#160f2b)
+}
+
+.game-art.screenshot.tintwell {
+  background:radial-gradient(ellipse at center,#e8a46b,#7a3a1f)
+}
+
+.game-art.screenshot.tintwell img {
+  top:70%
+}
+
+.game-art.screenshot.cragroost {
+  background:radial-gradient(ellipse at center,#7fae6a,#2e4226)
 }
 
 .game:hover .game-art.screenshot img {

@@ -72,3 +72,58 @@ if (betaForm) {
       'Your application has not been submitted by this website.';
   });
 }
+
+// Filter the game list by release status and game type.
+const filters = document.querySelector('#game-filters');
+
+if (filters) {
+  const games = [...document.querySelectorAll('.game[data-status]')];
+  const chips = [...filters.querySelectorAll('.chip')];
+  const statusText = document.querySelector('#filter-status');
+  const empty = document.querySelector('#games-empty');
+  const active = { status: 'all', type: 'all' };
+
+  const matches = (game, status, type) =>
+    (status === 'all' || game.dataset.status === status) &&
+    (type === 'all' || game.dataset.type.split(' ').includes(type));
+
+  const apply = () => {
+    let shown = 0;
+    games.forEach((game) => {
+      const visible = matches(game, active.status, active.type);
+      game.hidden = !visible;
+      if (visible) shown += 1;
+    });
+
+    chips.forEach((chip) => {
+      const kind = chip.dataset.filter;
+      const value = chip.dataset.value;
+      chip.setAttribute('aria-pressed', String(active[kind] === value));
+      const other = kind === 'status' ? active.type : active.status;
+      const count = games.filter((game) =>
+        kind === 'status' ? matches(game, value, other) : matches(game, other, value)
+      ).length;
+      chip.dataset.count = count;
+      chip.classList.toggle('is-empty', count === 0 && value !== 'all');
+    });
+
+    statusText.textContent = `Showing ${shown} of ${games.length} games`;
+    empty.hidden = shown !== 0;
+  };
+
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      active[chip.dataset.filter] = chip.dataset.value;
+      apply();
+    });
+  });
+
+  document.querySelector('#filter-reset').addEventListener('click', () => {
+    active.status = 'all';
+    active.type = 'all';
+    apply();
+  });
+
+  filters.hidden = false;
+  apply();
+}
